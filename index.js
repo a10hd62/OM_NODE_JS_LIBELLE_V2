@@ -93,18 +93,3 @@ app.get('/categories/addDeux', afficherAddCategoriesAddDeuxPage);
 app.post('/categories/addDeux', addCategoriesAddDeux);
 app.get('/chier/about', aboutChier);
 
-
-//const StringDecoder = require('string_decoder').StringDecoder;
-//const decoder = new StringDecoder('utf8');
-
-//var buff = Buffer('data to be buffered');
-//Print the buffered data
-//console.log(buff); 
-//Print the decoded buffer  
-//console.log(decoder.write(buff));
-
-
-// essai
-//app.use(parser.urlencoded({ extended: true }));
-
-//app.use(bodyParser.text()):
