@@ -1,7 +1,7 @@
 /*
     2018.01.06 OM CRUD AVEC NODE.JS
     ESSAIS ET ERREURS
-
+    encore un essai de git en local
 */
 var express = require('express');
 //var mysqlApostrophe = require("mysql-apostrophe");
@@ -92,4 +92,3 @@ app.get('/libelle/effacer/:idURLLibProb', effacerLibelle);
 app.get('/categories/addDeux', afficherAddCategoriesAddDeuxPage);
 app.post('/categories/addDeux', addCategoriesAddDeux);
 app.get('/chier/about', aboutChier);
-
