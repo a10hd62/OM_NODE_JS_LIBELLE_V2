@@ -1,0 +1,37 @@
+<% include partials/header %>
+    <title><%= titleom %></title>
+    <h1><%= topicHead %> AFFICHER lES LIBELLES</h1>
+
+
+    <div class="=" style="margin-left: 50px;margin-right: 50px">
+        <div class="col s12">
+            <% if(items.length > 0) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 1%; text-align: center">No</th>
+                            <th style="width: 20%; text-align: center">Libellé problème</th>
+                            <th style="width: 10%; text-align: center">path image libellé</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% items.forEach(function(item, index) { %>
+                            <tr>
+                                <td style="width: 1%; text-align: center"><%=index + 1 %></td>
+                                <td style="width: 20%"><%= item.Libelle_Probleme %></td>
+                                <td style="width: 10%"><%= item.path_image_libelle %></td>
+                                <td solspan="2" style="width: 20%; text-align: center">
+                                    <a href="/libelle/editer/<%= item.id_libelle_probleme %>" class="btn btn-success">Edit</a>
+                                    <a href="/libelle/effacer/<%= item.id_libelle_probleme %>" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>                        
+                        <% }); %>
+                    </tbody>
+                </table>
+            <% } else { %>
+                <p><strong>La base de données est vide de sens !!!</strong></p>
+            <% } %>
+            <%- include partials/footer.ejs %>
+        </div>
+    </div>
+    

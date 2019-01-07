@@ -1,0 +1,33 @@
+{
+  "name": "om_node_js_libelle_v1",
+  "version": "1.0.0",
+  "description": "CRUD sur une table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a10hd62/OM_NODE_JS_CODE_AFFECTION_CRUD.git"
+  },
+  "keywords": [
+    "mysql",
+    "crud",
+    "node.js",
+    "express"
+  ],
+  "author": "OM de B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a10hd62/OM_NODE_JS_CODE_AFFECTION_CRUD/issues"
+  },
+  "homepage": "https://github.com/a10hd62/OM_NODE_JS_CODE_AFFECTION_CRUD#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  }
+}

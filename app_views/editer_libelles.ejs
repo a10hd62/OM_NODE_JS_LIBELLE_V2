@@ -1,0 +1,36 @@
+<% include partials/header %>
+    <title><%= titleom %></title>
+    <h1><%= topicHead %> EDITER UN LIBELLE</h1>
+
+
+    <div class="container">
+        <% if (message) { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        
+        <% if (items) { %>
+            <!--2019.01.06 OM une merde d'encodage me fait perdre des heures 
+                j'ai simplement suprimé enctype="multipart/form-data"
+                enctype="application/x-www-form-urlencoded"
+            -->
+            <form class="add-player-form" action="" method="post" >
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="kukuLibelle_Probleme">Libelle problème</label>
+                        <input type="text" class="form-control" name="NameLibelleProbleme" id="kukuLibelle_Probleme" value="<%= items.Libelle_Probleme %>" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="kukupath_image_libelle">Chemin image libelle</label>
+                        <input type="text" class="form-control" name="NamePathimageLibelle" id="kukupath_image_libelle" value="<%= items.path_image_libelle %>" rs>
+                    </div>
+                </div>
+    
+                <button type="submit" class="btn btn-success float-right">Update Libelle</button>
+            </form>
+        <% } else { %>
+            <p class="text-center">Player Not Found. Go <a href="/add">here</a> to add players.</p>
+        <% } %>
+    </div>
+    
+    </body>
+    </html>    

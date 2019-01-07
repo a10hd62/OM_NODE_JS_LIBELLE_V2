@@ -1,0 +1,26 @@
+<% include partials/header %>
+    <title><%= titleom %></title>
+    <h1><%= topicHead %></h1>
+    <form name="form1" method="POST" action="/libelle/add">
+    <table>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">With textarea</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" name="fname"></textarea>
+          </div>
+        <tr>
+        <td>Chemin image libellé</td>
+        <td><input type="text" name="lname" ></td>
+        </tr>
+        <tr>
+        <td colspan="2"><input type="submit" value="Save" ></td>
+        </tr>
+    </table>
+    </form>   
+    <% if(userValue!=null){ %>    
+        <div> Données claviotées <%= userValue.first %>  <%= userValue.last %> </div>
+    <%}%> 
+</body>
+<% include footer %>
