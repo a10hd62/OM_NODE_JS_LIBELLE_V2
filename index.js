@@ -15,15 +15,8 @@ var router = express.Router();
 
 
 app.use(bodyParser.json()); // support json encoded bodies
-//app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 
-//app.use(express.bodyParser());
-//app.use('/', router);
-
-//app.use(express.json());
-//app.use(parser.raw())
-//app.use(mysqlApostrophe);
 app.use(bodyParser.urlencoded({extended: true}));
 
 const port = 3001;
